@@ -1,3 +1,8 @@
 <% square = @squares.shuffle.first %>
 <h1><%= square.coord %></h1>
 
+<% @white = squareAnswerWhite(square) %>
+<% @black = squareAnswerBlack(square) %>
+
+<%= @white %>
+<%= @black %>
