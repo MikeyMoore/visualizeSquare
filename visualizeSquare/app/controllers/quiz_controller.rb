@@ -4,5 +4,6 @@ class QuizController < ApplicationController
   	@lastSquare = params[:s_field]
   	@answer = params[:a_field]
   	@color = params[:col_field]
+  	@image = params[:img_field]
   end
 end
