@@ -5,8 +5,8 @@
 <% @black = squareAnswerBlack(@square) %>
 
 
-<%= button_to "White", root_path, :method => "get", params: {a_field: @white, s_field: @square.coord, col_field: @square.color} %>
-<%= button_to "Black", root_path, :method => "get", params: {a_field: @black, s_field: @square.coord, col_field: @square.color} %>
+<%= button_to "Light Square", root_path, :method => "get", params: {a_field: @white, s_field: @square.coord, col_field: @square.color} %>
+<%= button_to "Dark Square", root_path, :method => "get", params: {a_field: @black, s_field: @square.coord, col_field: @square.color} %>
 
 <% if @lastSquare && @answer && @color %>
 	<p> 
