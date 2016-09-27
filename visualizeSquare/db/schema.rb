@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20160813225142) do
   create_table "squares", force: :cascade do |t|
     t.string   "coord"
     t.string   "color"
+    t.string   "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

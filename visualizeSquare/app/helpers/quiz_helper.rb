@@ -1,6 +1,6 @@
 module QuizHelper
 	def squareAnswerWhite(square)
-		if square.color == 'white'
+		if square.color == 'light square'
 			return 'correct'
 		else
 			return 'incorrect'
@@ -8,7 +8,7 @@ module QuizHelper
 	end
 
 	def squareAnswerBlack(square)
-		if square.color == 'black'
+		if square.color == 'dark square'
 			return 'correct'
 		else
 			return 'incorrect'
