@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # get 'quiz/index'
-  resources :quizes
+  resources :quiz
 
   root 'quiz#index'
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,11 @@
+<div id="results">
+	<% if @lastSquare && @answer && @color %>
+		<p> 
+		Last question: <%= @lastSquare %> is a <%= @color %> which you got <%= @answer %> 
+		</p>
+		<img src='../<%= @image %>'/>
+	<% end %>
+</div>
+
+<%= button_to "next question", root_path, :method => "get" %>
+
