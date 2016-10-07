@@ -1,7 +1,25 @@
 // Place all the styles related to the Quiz controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	background-color:#1C3738;
+}
 
 #results {
 	border: 2px solid black;
+}
+
+.center {
+	margin-left:auto;
+	margin-right:auto;
+	width: 10em;
+	text-align: center;
+}
+
+#notation {
+	// border:solid #88D498 1px;
+	background-color:#549F93;
+	// background-color:#475B5A;
+	color:#000F08;
+	border-radius:40%;
 }
