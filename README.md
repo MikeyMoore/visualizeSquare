@@ -1,5 +1,5 @@
 # visualizeSquare
-A web app that tests users on their chess board visualization.  [Heroku Link](marksman.herokuapp.com)
+A web app that tests users on their chess board visualization.  [Heroku Link](https://www.marksman.herokuapp.com)
 
 ##MVP (reached)
 - Users are prompted to guess 'light' or 'dark' for a chess board coordinate
