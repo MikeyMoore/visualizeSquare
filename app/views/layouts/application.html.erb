@@ -14,8 +14,26 @@
       <p>marksman</p>
     </div>
 
-    <p>login | register</p>
-    
+    <div id="login">
+
+    <form action=#>
+
+      <input type="text" placeholder="Username" name="username">
+
+      <input type="password" placeholder="Password" name="pass">
+
+      <button type="submit">Login</button>
+
+    </form>
+
+    </div>
+
+    <div id="links">
+
+      <p> <%= link_to "Home", quiz_index_url %> | <a href=#>Register</a> </p>
+
+    </div>
+
   </div>
 
 <%= yield %>

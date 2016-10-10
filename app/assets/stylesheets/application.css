@@ -29,4 +29,13 @@
 #logo {
   float:left;
   padding:.2px 0 .2px 35px;
+  /*background-color:blue;*/
+}
+
+#login {
+  /*background-color:black;*/
+  margin:auto;
+  float:left;
+  width:55%;
+  margin-top:15px;
 }

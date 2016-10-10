@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   # get 'quiz/index'
   resources :quiz
 
