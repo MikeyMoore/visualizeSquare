@@ -12,5 +12,10 @@ class QuizController < ApplicationController
   	@answer = params[:a_field]
   	@color = params[:col_field]
   	@image = params[:img_field]
+
+    # if @answer == "correct"
+      # add one to number of correct quesses for current user
+    #else
+      # add one to number of incorrect quesses for current user
   end
 end
