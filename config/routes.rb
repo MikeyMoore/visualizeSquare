@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'users/new'
 
   # get 'quiz/index'
-  resources :quiz
+  resources :quiz, :users
 
   root 'quiz#index'
   # The priority is based upon order of creation: first created -> highest priority.
