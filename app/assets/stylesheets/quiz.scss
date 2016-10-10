@@ -10,8 +10,19 @@ body {
 	// background-color:#1C3738;
 }
 
+#correct {
+  color:green;
+}
+
+#incorrect {
+  color:red;
+}
+
 #results {
-	border: 2px solid black;
+	// border: 2px solid black;
+  text-align:center;
+  color:#000F08;
+  font-size:20px;
 }
 
 .center {
