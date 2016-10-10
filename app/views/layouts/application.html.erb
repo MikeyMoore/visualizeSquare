@@ -16,21 +16,39 @@
 
     <div id="login">
 
-    <form action=#>
+    <% if !logged_in? %>
 
-      <input type="text" placeholder="Username" name="username">
+    <%= form_tag("/sessions", method:"post") do %>
 
-      <input type="password" placeholder="Password" name="pass">
+      <%= text_field_tag :username %>
+      <%= password_field_tag :password %>
 
-      <button type="submit">Login</button>
+      <%= submit_tag "Login" %>
 
-    </form>
+    <% end %>
+
+    <% else %>
+
+    <p><%= current_user.username %>
+
+      <%= button_to "Log Out", session_path(session[:user_id]), :method => :delete %>
+    </p>
+
+
+
+    <% end %>
 
     </div>
 
     <div id="links">
 
-      <p> <%= link_to "Home", quiz_index_url %> | <%= link_to "Register", users_new_url %> </p>
+      <p> <%= link_to "Home", quiz_index_url %>
+
+      <% if !logged_in? %>
+
+        | <%= link_to "Register", users_new_url %> </p>
+
+      <% end %>
 
     </div>
 

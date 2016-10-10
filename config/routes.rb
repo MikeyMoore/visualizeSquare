@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   get 'users/new'
 
   # get 'quiz/index'
-  resources :quiz, :users
+  resources :quiz, :users, :sessions
 
   root 'quiz#index'
   # The priority is based upon order of creation: first created -> highest priority.
